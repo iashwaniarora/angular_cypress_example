@@ -24,7 +24,7 @@ pipeline {
         stage('Unit Tests') {
             steps {
             echo 'starting stage Unit Tests....'
-                bat 'npm run test'
+               
             }
         }
         stage('e2e Tests') {
