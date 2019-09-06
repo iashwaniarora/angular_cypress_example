@@ -4,14 +4,14 @@ pipeline {
     tools {nodejs "node"}
 
     environment {
-        CHROME_BIN = '/bin/google-chrome'
+        CHROME_BIN = 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
     }
 
     stages {
         stage('Dependencies') {
             steps {
                echo 'starting stage Dependencies....'
-                bat 'npm i'
+                
             }
         }
         stage('Build') {
