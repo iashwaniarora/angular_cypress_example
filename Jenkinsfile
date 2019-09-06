@@ -18,7 +18,7 @@ pipeline {
             steps {
                   echo 'starting stage Build....'
                 bat 'node -v'
-                bat 'npm run build'
+                
             }
         }
         stage('Unit Tests') {
@@ -29,7 +29,7 @@ pipeline {
         }
         stage('e2e Tests') {
             steps {
-                bat 'npm run cypress:ci'
+                bat 'cypress run'
             }
         }
         stage('Deploy') {
